@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js" integrity="sha512-ae875b70oSplY0gKnsUZyoB0F2ywdOn3pSKP5dBV6ZdBmtr5D54VYKXbMamjnGNA1IpvyF6v0tHuQUZv6rtiAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
     <title>World Clock - Adrianna Bell</title>
   </head>
   <body>
@@ -16,28 +16,31 @@
       <h1>
         World Clock🌍
       </h1>
-      <select>
+      
+      <select id="city">
         <option value="">Select City...</option>
-        <option value="">Atlanta</option>
-        <option value="">Chicago</option>
-        <option value="">Philadelphia</option>
+        <option value="Africa/Lagos🇳🇬">Nigeria</option>
+        <option value="America/Jamaica🇯🇲">Jamaica</option>
+        <option value="America/Seoul🇰🇷">South Korea</option>
       </select>
 
+      <div id="cities">
         <div class="city" id="new-york-city">
         <div>
           <h2>New York City 🇺🇸 </h2>
           <div class="date"></div>
            </div>
-          <div class="time"><small>AM</small> </div>
+          <div class="time"></div>
             </div>
             <div class="city" id="rabat">
         <div>
           <h2>Rabat 🇲🇦 </h2>
           <div class="date"></div>
            </div>
-          <div class="time"><small>AM</small> </div>
+          <div class="time"></div>
             </div>
-             </div>
+          </div>
+        </div>
       <footer>
         Coded by Adrianna Bell
       <a href="https://github.com/thecodedcosmos/amazing-world-clock"
